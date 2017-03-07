@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ "$#" -eq 0 ]; then
+  echo "apinet: try 'apinet --help' or 'apinet -h' for more information"
+  exit 1
+elif [ "$#" -ge 2 ]; then
+  echo "too many arguments"
+  exit 1
+fi
+
+apiurl="https://api.noraworld.net"
+
+for OPT in "$@"
+do
+  case $OPT in
+    "--help" | "-h" )
+      echo -e "usage: curl <subcommand>\n"
+      echo "<subcommand>"
+      echo "ip    get your ip address"
+      echo "host  get your remote host"
+      exit 1
+    ;;
+  esac
+done
+
+case "$1" in
+  "ip"   ) curl ${apiurl}/ip       ;;
+  "host" ) curl ${apiurl}/host     ;;
+  *      ) echo "invalid argument" ;;
+esac
+
+exit 0
