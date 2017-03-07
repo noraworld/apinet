@@ -24,3 +24,6 @@ Get your remote host
 $ apinet host
 ```
 Commands will be added in the future...
+
+## License
+All codes of this repository are available under the MIT license. See the [LICENSE](https://github.com/noraworld/apinet/blob/master/LICENSE) for more information.
