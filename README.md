@@ -11,6 +11,14 @@ $ chmod 755 apinet
 $ sudo cp apinet /usr/local/bin
 ```
 
+Not work? Try this:
+
+```bash
+$ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
+```
+
+I assume you are using bash shell. Change the filename to exact one if you are not using bash.
+
 ## Usage
 Get your IP address
 
