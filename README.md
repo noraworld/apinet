@@ -15,6 +15,7 @@ Not work? Try this:
 
 ```bash
 $ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
 I assume you are using bash shell. Change the filename to exact one if you are not using bash.
